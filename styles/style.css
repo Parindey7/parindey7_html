@@ -1,0 +1,495 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 0%;
+}
+
+code {
+  font-family: "Poppins", sans-serif;
+}
+/* Navbar  */
+.navbar {
+  box-shadow: 0px 0px 15px 2px black;
+}
+
+#navbarSupportedContent {
+  margin-right: 10%;
+}
+
+
+
+/* Home Page  */
+.bg-image {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bg_image.jpg) top center;
+  background-size: cover;
+  position: absolute;
+}
+
+#child_div {
+  color: white;
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  top: 18%;
+}
+
+#heading {
+  position: relative;
+  font-family:'Kaushan Script', cursive;;
+  font-size: 80px;
+  bottom: 5.5rem;
+}
+
+#heading:hover {
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+#tagline {
+  padding-top: 20%;
+  padding-bottom: 2%;
+}
+
+#description {
+  padding-bottom: 4.5%;
+}
+
+@media screen and (max-width: 600px) {
+  #heading {
+    font-size: 45px;
+    padding-top: 2%;
+  }
+  #tagline {
+    padding-top: 62%;
+  }
+  #description {
+    padding-top: 8%;
+  }
+  #explore_button {
+    margin-top: 10%;
+  }
+  #itinerary_heading {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Explore Button CSS  */
+#explore_button{
+  color: rgb(0, 0, 0);
+  background-color: white;
+  font-weight: 600;
+  border-radius: 18px;
+  box-shadow: 0px 0px  12px aliceblue;
+  padding: 10px 15px;
+}
+#explore_button:hover{
+  background-color: #28363D;
+  color: white;
+  box-shadow: 0px 0px  12px rgb(0, 0, 0);
+}
+
+
+
+
+
+
+/* Explore Page  */
+#explore_div {
+  margin-top: 4rem;
+}
+
+#itinerary_heading {
+  font-size: 2rem;
+}
+
+#card {
+  width: 20rem;
+}
+
+.card-img-top {
+  box-shadow: 0px 5px 30px black;
+  margin-top: -20px;
+}
+
+.card-body {
+  padding-top: 30px;
+}
+
+#card_button {
+  background-color: #2f575d;
+  color: white;
+  border-radius: 18px;
+}
+
+
+
+/* Gallery Page  */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+#carousel_image1 {
+  width: 100vw;
+  height: 68vh;
+  background: url("../images/carousel1.jpg") top center;
+  background-size: cover;
+  position: absolute;
+}
+
+#carousel_image2 {
+  width: 100vw;
+  height: 68vh;
+  background: url("../images/carousel2.jpg") top center;
+  background-size: cover;
+  position: absolute;
+}
+
+#carousel_image3 {
+  width: 100vw;
+  height: 68vh;
+  background: url("https://images.unsplash.com/photo-1680859535723-aba6addf4c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2757&q=80")
+    top center;
+  background-size: cover;
+  position: absolute;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+#youtube_card:hover {
+  filter: brightness(0.8);
+  transform: rotate(-2deg);
+  box-shadow: 0px 0px 15px 1px black;
+  border: 0px;
+}
+
+#youtube_icon {
+  color: red;
+  font-size: 80px;
+  margin: 22%;
+}
+
+
+/* Itinerary Page  */
+#itinerary_card {
+  width: 18rem;
+}
+
+.itinerary_image1 {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  background: url(/images/itinerary2.webp) top center;
+  background-size: cover;
+}
+
+.itinerary_image2 {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  background: url(/images/itinerary1.webp) top center;
+  background-size: cover;
+}
+
+.itinerary_image3 {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  background: url(/images/itinerary3.webp) top center;
+  background-size: cover;
+}
+
+.itinerary_lower1 {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background: url(/images/i1.svg) top center;
+  background-size: cover;
+}
+
+.itinerary_lower2 {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background: url(/images//i2.svg) top center;
+  background-size: cover;
+}
+
+.itinerary_lower3 {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background: url(/images/i3.svg) top center;
+  background-size: cover;
+}
+
+#name {
+  font-family: "Kaushan Script", cursive;
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  width: 100vw;
+  text-align: center;
+  top: 2%;
+}
+
+#itinerary_date {
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  width: 100vw;
+  top: 27%;
+}
+
+#itinerary_route {
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  width: 100vw;
+  top: 35%;
+}
+
+#book_button {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  top: 78%;
+}
+
+#itinerary_highlights {
+  position: absolute;
+  font-size: 17px;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  top: 90%;
+}
+
+#booknow_button {
+  border-radius: 12px;
+  border: 2px black;
+  box-shadow: 0px 0px 12px 2px #c4cdc1;
+  background-color: #dee1dd;
+  color: #28363d;
+  font-size: 90%;
+}
+
+#booknow_button:hover {
+  background-color: #28363d;
+  color: #dee1dd;
+  box-shadow: 0px 0px 10px 2px black;
+  border: 0px;
+}
+
+
+
+/* About Us Page */
+
+#about-div {
+  width: 100%;
+  height: 100vh;
+  background: top center;
+  background: url(../images/about_bg_image.jpg) top center;
+  background-size: cover;
+  position: absolute;
+  top: 7rem;
+}
+
+#about-child-div {
+  width: 65%;
+}
+
+#about-main-image {
+  width: 30rem;
+  box-shadow: 0px 10px 15px Black;
+}
+
+@media screen and (max-width: 600px) {
+  #about-main-image {
+    width: 22rem;
+  }
+}
+
+
+
+
+/* Contact Us  */
+#contact {
+  margin-top: 3.5rem;
+}
+
+.btn-contact-bg {
+  border-radius: 30px;
+  color: #fff;
+  outline: medium none !important;
+  padding: 15px 27px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #2f575d;
+  font-family: "poppins", sans-serif;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-contact-bg:hover,
+.btn-contact-bg:focus {
+  background: #28363d;
+  color: #fff;
+}
+
+.single_address {
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .single_address {
+    padding-left: 0px;
+  }
+}
+
+.single_address i {
+  background: #f6f6f6;
+  color: #2f575d;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  float: left;
+  margin-right: 14px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.single_address:hover i {
+  background: #28363d;
+  color: #fff;
+}
+
+.single_address h4 {
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 18px;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.single_address p {
+  overflow: hidden;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.section-title h1 {
+  font-size: 44px;
+  font-weight: 500;
+  margin-top: 0;
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.section-title p {
+  padding: 0 10px;
+  width: 70%;
+  margin: auto;
+  letter-spacing: 1px;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.text-center {
+  text-align: center !important;
+}
+
+
+
+/* Book Now Page  */
+/* #enquiry_bg_image {
+  width: 100vh;
+  height: 100vh;
+  background: url(./images/Enquiry_bg.svg);
+  background-size: cover;
+} */
+
+
+#enquiry_div {
+  height: 100%;
+  position: absolute;
+}
+
+#enquiry_card {
+  color: white;
+  /* border-radius: 3.5rem; */
+  background-color: #28363d;
+  position: relative;
+}
