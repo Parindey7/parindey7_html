@@ -1,0 +1,189 @@
+ <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div id="carousel_image1"></div>
+
+        <div class="container">
+          <div class="carousel-caption text-start text-center">
+            <h6><b>Deepak Tal Lake</b></h6>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div id="carousel_image2"></div>
+
+        <div class="container">
+        <div class="carousel-caption text-start text-center">
+        <h6><b>Varanasi</b></h6>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div id="carousel_image3"></div>
+
+        <div class="container">
+        <div class="carousel-caption text-start text-center">
+        <h6><b>Shimla</b></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Recent Videos Section  -->
+
+  <div class="container marketing">
+    <h2 class='text-center mb-4'><b>Recent Videos</b></h2>
+    <div class="row d-flex justify-content-evenly mt-5">
+      <div class="col-lg-4">
+        <a href="https://youtu.be/p7qVubkp-bw" target='_blank' rel="noopener noreferrer">
+        <div class="card" id='youtube_card'>
+          <img height="270px" src="./images/yt1.webp" class="card-img-top" alt="yt1"/>
+          <div class="card-img-overlay align-middle mt-4">
+            <i class="fa-brands fa-youtube  fa-xs" id="youtube_icon" style="color: #ff0000;"></i>
+          </div>
+        </div>
+        </a>
+        <p class='mt-2'><b>Manali</b></p>                  
+      </div>
+      <div class="col-lg-4">
+      <a href="https://youtu.be/IkMvR5WSjYo" target='_blank' rel="noopener noreferrer">
+        <div class="card" id='youtube_card'>
+          <img height="270px" src="./images/yt2.webp" class="card-img-top" alt="yt2"/>
+          <div class="card-img-overlay align-middle mt-4">
+            <i class="fa-brands fa-youtube  fa-xs" id="youtube_icon" style="color: #ff0000;"></i>
+          </div>
+        </div>
+        </a>
+        <p class='mt-2'><b>Varanasi</b></p>                  
+      </div>
+      <div class="col-lg-4">
+      <a href="https://youtu.be/IJUa2ewSWDU" target='_blank' rel="noopener noreferrer">
+        <div class="card" id='youtube_card'>
+          <img height="270px" src="./images/yt3.webp" class="card-img-top" alt="yt3"/>
+          <div class="card-img-overlay align-middle mt-4">
+            <i class="fa-brands fa-youtube  fa-xs" id="youtube_icon" style="color: #ff0000;"></i>
+          </div>
+        </div>
+        </a>
+        <p class='mt-2'><b>Shimla</b></p>                  
+      </div>
+    </div>
+</div>
+
+
+
+
+
+/* Gallery Page  */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+#carousel_image1 {
+  width: 100vw;
+  height: 68vh;
+  background: url("../images/carousel1.jpg") top center;
+  background-size: cover;
+  position: absolute;
+}
+
+#carousel_image2 {
+  width: 100vw;
+  height: 68vh;
+  background: url("../images/carousel2.jpg") top center;
+  background-size: cover;
+  position: absolute;
+}
+
+#carousel_image3 {
+  width: 100vw;
+  height: 68vh;
+  background: url("https://images.unsplash.com/photo-1680859535723-aba6addf4c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2757&q=80")
+    top center;
+  background-size: cover;
+  position: absolute;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+#youtube_card:hover {
+  filter: brightness(0.8);
+  transform: rotate(-2deg);
+  box-shadow: 0px 0px 15px 1px black;
+  border: 0px;
+}
+
+#youtube_icon {
+  color: red;
+  font-size: 80px;
+  margin: 22%;
+}

@@ -10,16 +10,30 @@ body {
   margin-top: 0%;
 }
 
+p{
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
 code {
   font-family: "Poppins", sans-serif;
 }
 /* Navbar  */
+#navbar_container {
+  position: relative;
+}
 .navbar {
-  box-shadow: 0px 0px 15px 2px black;
+  box-shadow:0px 0px 50px -6px black;
+  position: absolute;
+  border-radius: 10px;
+  position: fixed;
+  top: 1%;
+  left: 1.5%;
+  right: 1.5%;
 }
 
 #navbarSupportedContent {
-  margin-right: 10%;
+  margin-left: auto;
 }
 
 
@@ -31,6 +45,7 @@ code {
   background: url(../images/bg_image.jpg) top center;
   background-size: cover;
   position: absolute;
+  top: 0%;
 }
 
 #child_div {
@@ -38,21 +53,21 @@ code {
   height: 80vh;
   width: 100vw;
   position: relative;
-  top: 18%;
+  top: 20%;
 }
 
 #heading {
   position: relative;
   font-family:'Kaushan Script', cursive;;
   font-size: 80px;
-  bottom: 5.5rem;
+  bottom: 0.5rem;
 }
 
 #heading:hover {
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 #tagline {
-  padding-top: 20%;
+  padding-top: 22%;
   padding-bottom: 2%;
 }
 
@@ -66,7 +81,7 @@ code {
     padding-top: 2%;
   }
   #tagline {
-    padding-top: 62%;
+    padding-top: 36%;
   }
   #description {
     padding-top: 8%;
@@ -102,7 +117,7 @@ code {
 
 /* Explore Page  */
 #explore_div {
-  margin-top: 4rem;
+  margin-top: 8rem;
 }
 
 #itinerary_heading {
@@ -111,6 +126,8 @@ code {
 
 #card {
   width: 20rem;
+  box-shadow:0px 6px 22px -5px black;
+  border-radius: 10px;
 }
 
 .card-img-top {
@@ -129,104 +146,49 @@ code {
 }
 
 
-
 /* Gallery Page  */
-.carousel {
-  margin-bottom: 4rem;
+#Frame {
+  box-shadow: 0px 0px 10px 1px rgba(0, 95, 129, 0.5);
+  border: 8px solid white;
+}
+h1 {
+  font-family: 'Kaushan Script', cursive;
 }
 
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-.carousel-item {
-  height: 32rem;
-}
-
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
-}
-
-#carousel_image1 {
-  width: 100vw;
-  height: 68vh;
-  background: url("../images/carousel1.jpg") top center;
-  background-size: cover;
-  position: absolute;
-}
-
-#carousel_image2 {
-  width: 100vw;
-  height: 68vh;
-  background: url("../images/carousel2.jpg") top center;
-  background-size: cover;
-  position: absolute;
-}
-
-#carousel_image3 {
-  width: 100vw;
-  height: 68vh;
-  background: url("https://images.unsplash.com/photo-1680859535723-aba6addf4c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2757&q=80")
-    top center;
-  background-size: cover;
-  position: absolute;
-}
-
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-}
-.featurette-divider {
-  margin: 5rem 0;
-}
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05rem;
-}
-
-@media (min-width: 40em) {
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+/* Define the keyframes for the animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
 
-  .featurette-heading {
-    font-size: 50px;
+  to {
+    opacity: 1;
   }
 }
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+/* Apply the animation to the heading */
+h1 {
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  transform: ease-in-out;
+}
+
+@keyframes riseUp {
+  from {
+    transform: translateY(50%);
+  }
+
+  to {
+    transform: translateY(0);
+
   }
 }
 
-#youtube_card:hover {
-  filter: brightness(0.8);
-  transform: rotate(-2deg);
-  box-shadow: 0px 0px 15px 1px black;
-  border: 0px;
-}
-
-#youtube_icon {
-  color: red;
-  font-size: 80px;
-  margin: 22%;
+/* Apply the animation to the element */
+div {
+  animation-name: riseUp;
+  animation-duration: 4s;
+  transform: ease-in-out;
 }
 
 
@@ -238,7 +200,7 @@ code {
 .itinerary_image1 {
   position: relative;
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   background: url(/images/itinerary2.webp) top center;
   background-size: cover;
 }
@@ -246,7 +208,7 @@ code {
 .itinerary_image2 {
   position: relative;
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   background: url(/images/itinerary1.webp) top center;
   background-size: cover;
 }
@@ -254,7 +216,7 @@ code {
 .itinerary_image3 {
   position: relative;
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   background: url(/images/itinerary3.webp) top center;
   background-size: cover;
 }
@@ -290,25 +252,25 @@ code {
   font-size: 70px;
   width: 100vw;
   text-align: center;
-  top: 2%;
+  top: 14%;
 }
 
 #itinerary_date {
   position: absolute;
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   width: 100vw;
-  top: 27%;
+  top: 43%;
 }
 
 #itinerary_route {
   position: absolute;
   color: white;
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   width: 100vw;
-  top: 35%;
+  top: 36%;
 }
 
 #book_button {
@@ -333,7 +295,7 @@ code {
   box-shadow: 0px 0px 12px 2px #c4cdc1;
   background-color: #dee1dd;
   color: #28363d;
-  font-size: 90%;
+  font-size: 100%;
 }
 
 #booknow_button:hover {
@@ -354,7 +316,7 @@ code {
   background: url(../images/about_bg_image.jpg) top center;
   background-size: cover;
   position: absolute;
-  top: 7rem;
+  top: 9rem;
 }
 
 #about-child-div {
@@ -377,7 +339,7 @@ code {
 
 /* Contact Us  */
 #contact {
-  margin-top: 3.5rem;
+  margin-top: 8rem;
 }
 
 .btn-contact-bg {
@@ -481,7 +443,6 @@ code {
   background-size: cover;
 } */
 
-
 #enquiry_div {
   height: 100%;
   position: absolute;
@@ -493,3 +454,6 @@ code {
   background-color: #28363d;
   position: relative;
 }
+
+
+

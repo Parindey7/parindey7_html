@@ -7,7 +7,7 @@
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
-          content="Parindey7 is a travel website powered by a community of budget travellers. We offer Inexpensive itineraries, Aesthetic accomodation, Offbeat spots and High vibes."
+          content="Parindey7 is a travel website powered by a community of budget travellers. We offer Inexpensive itineraries, Aesthetic accommodation, Offbeat spots and High vibes."
         />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -27,38 +27,40 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
     </style>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light w-100" >
-        <a href='/'><img src="./images/logo.png" height="25" alt="parindey_logo"/></a>
-        <a href='/'><img class="navbar-brand" src="./images/name.png" height="40" alt="parindey_name"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-            <ul class="navbar-nav m-auto">
-            <li class="nav-item active mx-1">
-                <a class="nav-link" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a class="nav-link active" aria-current="page" href="/explore.html">Explore</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a class="nav-link" aria-current="page" href="/gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a class="nav-link" aria-current="page" href="/aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item mx-1">
-                <a class="nav-link" aria-current="page" href="/contactus.html">Contact Us</a>
-            </li>
-            </ul>
-        </div>
-    </nav>
+    <div id="navbar_container">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" >
+            <a href='/'><img src="./images/logo.png" height="25" alt="parindey_logo"/></a>
+            <a href='/'><img class="navbar-brand" src="./images/name.png" height="40" alt="parindey_name"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav m-auto">
+                <li class="nav-item active mx-1">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link active" aria-current="page" href="/explore.html">Explore</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" aria-current="page" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" aria-current="page" href="/aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" aria-current="page" href="/contactus.html">Contact Us</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
 
     <div class="container" id='explore_div'>
         <h1 class='text-center' id='itinerary_heading'><b>I T I N E R A R I E S</b></h1>
         <div class="row justify-content-around border-dark pt-3">
-            <div class="text-center card my-5 mx-3 d-flex bg-light text-dark" id="card">
+            <!-- <div class="text-center card my-5 mx-3 d-flex bg-light text-dark" id="card">
                 <div>
                     <img src="./images/Kheerganga.webp" height="225" class="card-img-top" alt="image1"/>
                 </div>
@@ -68,11 +70,11 @@
                     <p class="card-text">With Parvati River flowing through its Bosom, Enjoy the Hippie Culture and A Trek amidst the presence of Lush Green Mountains.</p>
                     <div class='d-flex justify-content-between'>
                         <span><b>₹</b><small> 3999/-</small></span>
-                        <span><small><i class="fa-solid fa-clock"></i> 2N/3D</small></span>
+                        <span><small><i class="fa-regular fa-calendar"></i> 19-22 May</small></span>
                     </div>
                     <a class="btn mt-3" id="card_button" href="/itinerary1.html">View Details</a>
                 </div>
-            </div>
+            </div> -->
 
             <div class="text-center card my-5 mx-3 d-flex bg-light text-dark" id="card">
                 <div >
@@ -84,7 +86,7 @@
                     <p class="card-text">Where the sand is warm, the sun is hot, and the drinks are cold, days are lazy, the nights are crazy and you'll always feel like dancing more.</p>
                     <div class='d-flex justify-content-between'>
                         <span><b>₹</b><small> 4999/-</small></span>
-                        <span><small><i class="fa-solid fa-clock"></i> 2N/3D</small></span>
+                        <span><small><i class="fa-regular fa-calendar"></i> 14-18 June</small></span>
                     </div>
                     <a class="btn mt-3" id="card_button" href="/itinerary2.html">View Details</a>
                 </div>
@@ -100,9 +102,25 @@
                     <p class="card-text">Enjoy the Hippie Culture of the farthest village of Parvati Valley, Surrounded by lush green gills and Snow dusted peaks with Cannabis plantations all around.</p>
                     <div class='d-flex justify-content-between'>
                         <span><b>₹</b><small> 3499/-</small></span>
-                        <span><small><i class="fa-solid fa-clock"></i> 2N/3D</small></span>
+                        <span><small><i class="fa-regular fa-calendar"></i> 1-4 June</small></span>
                     </div>
                     <a class="btn mt-3" id="card_button" href="/itinerary3.html">View Details</a>
+                </div>
+            </div>
+
+            <div class="text-center card my-5 mx-3 d-flex bg-light text-dark" id="card">
+                <div >
+                    <img src="images/Spiti.webp" height="225" class="card-img-top" alt="image2"/>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Spiti Valley</strong></h5>
+                    <p><i>Land of Lamas</i></p>
+                    <p class="card-text">Valley with high-altitude desert terrain, with barren slopes and vast expanses of arid land and surrounded by snow-capped peaks above 19,700 feet</p>
+                    <div class='d-flex justify-content-between'>
+                        <span><b>₹</b><small> -</small></span>
+                        <span><small><i class="fa fa-map-marker me-1"></i>Himachal Pradesh</small></span>
+                    </div>
+                    <a class="btn mt-3" id="card_button">Coming Soon</a>
                 </div>
             </div>
 
