@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 0%;
+  }
+  
+  p{
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+  
+  code {
+    font-family: "Poppins", sans-serif;
+  }
+
+
+/* Gallery Page  */
+#Frame {
+    box-shadow: 0px 0px 10px 1px rgba(0, 95, 129, 0.5);
+    border: 8px solid white;
+  }
+  h1 {
+    font-family: 'Kaushan Script', cursive;
+  }
+  /* Define the keyframes for the animation */
+  /* @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the heading */
+  /* h1 {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    transform: ease-in-out;
+  } */
+  
+  /* @keyframes riseUp {
+    from {
+      transform: translateY(50%);
+    }
+  
+    to {
+      transform: translateY(0);
+  
+    }
+  }
+   */
+  /* Apply the animation to the element */
+  /* div {
+    animation-name: riseUp;
+    animation-duration: 4s;
+    transform: ease-in-out;
+  } */ */
+
+
+
+
+  /* Navbar  */
+#navbar_container {
+    position: relative;
+  }
+  .navbar {
+    box-shadow:0px 0px 50px -6px black;
+    position: absolute;
+    border-radius: 10px;
+    position: fixed;
+    top: 1%;
+    left: 1.5%;
+    right: 1.5%;
+  }
+  
+  #navbarSupportedContent {
+    margin-left: auto;
+  }
