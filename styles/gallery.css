@@ -32,7 +32,7 @@ html {
   
    @keyframes riseUp {
     from {
-      transform: translateY(5%);
+      transform: translateY(10%);
     }
   
     to {
@@ -43,11 +43,22 @@ html {
   /* Apply the animation to the element */
    #parent {
     animation-name: riseUp;
-    animation-duration: 1s;
+    animation-duration: 2s;
     transform: ease-in-out;
   }
 
+  #youtube{
+    background-color: #27374D;
+  }
 
+  #youtubethumbnail{
+      opacity: 0.8;
+      transition: opacity 0.2s ease-in-out;
+  }
+  #youtubethumbnail:hover {
+    opacity: 1;
+  }
+ 
 
 
   /* Navbar  */
