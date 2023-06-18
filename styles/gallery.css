@@ -28,41 +28,24 @@ html {
   h1 {
     font-family: 'Kaushan Script', cursive;
   }
-  /* Define the keyframes for the animation */
-  /* @keyframes fadeIn {
+
+  
+   @keyframes riseUp {
     from {
-      opacity: 0;
+      transform: translateY(5%);
     }
   
     to {
-      opacity: 1;
+      transform: translateY(0%);
     }
   }
-  
-  /* Apply the animation to the heading */
-  /* h1 {
-    animation-name: fadeIn;
-    animation-duration: 4s;
-    transform: ease-in-out;
-  } */
-  
-  /* @keyframes riseUp {
-    from {
-      transform: translateY(50%);
-    }
-  
-    to {
-      transform: translateY(0);
-  
-    }
-  }
-   */
+   
   /* Apply the animation to the element */
-  /* div {
+   #parent {
     animation-name: riseUp;
-    animation-duration: 4s;
+    animation-duration: 1s;
     transform: ease-in-out;
-  } */ */
+  }
 
 
 
