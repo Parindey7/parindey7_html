@@ -9,6 +9,11 @@ html {
     -moz-osx-font-smoothing: grayscale;
     margin-top: 0%;
   }
+
+#gallery_main{
+  margin-top: 10%;
+}
+  
   
   p{
     margin-bottom: 0;
@@ -51,9 +56,30 @@ html {
     background-color: #27374D;
   }
 
+  #youtube_parent{
+    width: 60rem;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+    -ms-overflow-style: hidden;
+    scrollbar-width: none;
+    /* border: 1px solid gray; */
+    padding: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    box-shadow: 0px 0px 5px 0px gray;
+  }
+
+
+  #youtube_parent::-webkit-scrollbar{
+    display: none;
+  }
+
   #youtubethumbnail{
       opacity: 0.8;
       transition: opacity 0.2s ease-in-out;
+      scroll-snap-align: start;
   }
   #youtubethumbnail:hover {
     opacity: 1;
@@ -66,7 +92,7 @@ html {
     position: relative;
   }
   .navbar {
-    box-shadow:0px 0px 50px -6px black;
+    box-shadow:0px 0px 40px -6px black;
     position: absolute;
     border-radius: 10px;
     position: fixed;
@@ -77,4 +103,32 @@ html {
   
   #navbarSupportedContent {
     margin-left: auto;
+  }
+
+  /*Media Screen*/
+  
+  @media only screen and (max-width: 650px) {
+    #youtube_parent{
+      width: 100%;
+      display: flex;
+      padding:0%;
+      border: 0px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-left: 0%;
+    }
+    
+    p{
+      display: none;
+    }
+  
+    #youtubethumbnail{
+      opacity: 1;
+    }
+
+    #gallery_main{
+      margin-top: 20%;
+    }
+      
+    
   }
