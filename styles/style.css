@@ -416,5 +416,9 @@ code {
   position: relative;
 }
 
+#explore_footer p{
+  font-size: 0.8rem;
+}
+
 
 
