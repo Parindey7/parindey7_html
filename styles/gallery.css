@@ -24,10 +24,14 @@ html {
     font-family: "Poppins", sans-serif;
   }
 
+.recent_trips{
+  background-color: rgb(213, 213, 213);
+}
+
 
 /* Gallery Page  */
 #Frame {
-    box-shadow: 0px 0px 10px 1px rgba(0, 95, 129, 0.5);
+    box-shadow: 0px 0px 10px 1px rgba(0, 24, 33, 0.5);
     border: 8px solid white;
   }
   h1 {
@@ -104,6 +108,7 @@ html {
   #navbarSupportedContent {
     margin-left: auto;
   }
+
 
   /*Media Screen*/
   
