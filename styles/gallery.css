@@ -61,16 +61,17 @@ html {
   }
 
   #youtube_parent{
-    width: 60rem;
-    scroll-snap-type: x mandatory;
+    width: 60%;
+    /* scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow-x: scroll;
     -ms-overflow-style: hidden;
-    scrollbar-width: none;
+    scrollbar-width: none; */
     /* border: 1px solid gray; */
     padding: 5px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
     box-shadow: 0px 0px 5px 0px gray;
   }
@@ -83,7 +84,7 @@ html {
   #youtubethumbnail{
       opacity: 0.8;
       transition: opacity 0.2s ease-in-out;
-      scroll-snap-align: start;
+      /* scroll-snap-align: start; */
   }
   #youtubethumbnail:hover {
     opacity: 1;
