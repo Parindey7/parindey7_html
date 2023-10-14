@@ -114,7 +114,7 @@
 
 /* Media query for phones (max-width: 768px) */
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     .timeline-item {
             display: flex;
