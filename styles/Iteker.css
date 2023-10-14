@@ -114,7 +114,7 @@
 
 /* Media query for phones (max-width: 768px) */
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
 
     .timeline-item {
             display: flex;
@@ -160,7 +160,4 @@
         margin-left: 30px;
     }
 
-    .timeline-label .timeline-change {
-        margin-top: -100px !important;
-    }
 }
