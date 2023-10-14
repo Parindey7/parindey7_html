@@ -1,0 +1,88 @@
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+    h2 {
+        font-size: large;
+    }
+
+    .contain {
+        margin-top: 100px;
+        padding-bottom: 10px;
+    }
+
+    .card__category {
+        border-radius: 20px 0;
+        position: absolute;
+        left: 0;
+        height: 30px;
+        padding: 0 30px;
+        background-color: coral;
+        color: #fff;
+        font-size: 1px;
+        line-height: 30px;
+    }
+
+    figure.card {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    #headingkerala{
+    color: black;
+    font-family: "Poppins";
+    margin-right: -450px;
+    }
+
+    #detailskerala{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-left: 550px;
+    }
+
+    #itkerala {
+    font-family: Lucida Handwriting;
+    font-size: 15px;
+    margin-left: 550px;
+    }
+
+    #customButton{
+    margin-top: -20px;
+    margin-right: -450px;
+    border-radius: 10px; 
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    background: #2f575d;   
+    box-shadow: rgba(192, 234, 240, 0.116) 0px 1px 0px 0px,
+            rgba(2, 80, 94, 0.356) 0px -1px 0px 0px inset;
+    }
+
+    #customButton:hover {
+    background: #1a3336;
+    box-shadow: rgba(192, 234, 240, 0.116) 0px 1px 0px 0px,
+            rgba(2, 80, 94, 0.356) 0px -1px 0px 0px inset;
+    transition: 0.5s;
+    color: #fff;
+    }
+
+    .buttonpara{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    }
+
+    .figuretransit {
+        width: 100% ;
+        display: flex ;
+        z-index: 2 !important;
+    }
+    
+    .figuretransit img {
+        width: 100% !important;
+    }
+
+                    }
+                

@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contain .card--4 h2 {
+    padding-top: 140px;
+    color: white;
+    font-size: xx-large;
+    align-items: center;
+    text-align: center;
+}
+
+#intro {
+    font-size: medium;
+}
+
+.card__category {
+    margin-top: -225px;
+    border-radius: 20px 0;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    padding: 0 50px;
+    background-color: coral;
+    color: #fff;
+    font-size: 1px;
+    line-height: 30px;
+}
+
+.card__category h6 {
+    padding-top: 3px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.contain {
+    margin-top: 150px;
+    margin-left: 250px;
+    margin-bottom: -400px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+figure.card {
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    background-image: var(--image-src);
+    background-position: 50% 50%;
+    background-size: 125%;
+    transition: background 600ms ease;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+figure.card:hover figcaption {
+    transform: translateY(0px);
+}
+
+figure.card--4:hover {
+    background-position: 100% 50%;
+}
+
+figure.card--4 figcaption {
+    right: 0;
+    transform: translateX(1000px);
+}
+
+figure.card--4 figcaption {
+    flex-direction: column;
+    width: 180px;
+    height: 100%;
+    padding: 20px 15px;
+}
+
+figure.card figcaption {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 1000px;
+    background-image: var(--image-src);
+    transition: transform 400ms ease;
+    cursor: pointer;
+}
+
+#headingkerala {
+    color: black;
+    font-family: "Poppins";
+}
+
+figure.card figcaption .info h3 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+#detailskerala {
+    color: black;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+#itkerala{
+letter-spacing: 5px;
+font-family: Lucida Handwriting, cursive;
+font-size: large;
+}
+
+#customButton{
+    border-radius: 10px; 
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+    background: #2f575d;
+    box-shadow: rgba(192, 234, 240, 0.116) 0px 1px 0px 0px,
+        rgba(2, 80, 94, 0.356) 0px -1px 0px 0px inset;
+}
+
+#customButton:hover {
+    background: #1a3336;
+    box-shadow: rgba(192, 234, 240, 0.116) 0px 1px 0px 0px,
+        rgba(2, 80, 94, 0.356) 0px -1px 0px 0px inset;
+    transition: 0.5s;
+    color: #fff;
+}
+.buttonpara{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+}

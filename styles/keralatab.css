@@ -1,0 +1,121 @@
+/* Media Queries for ipad */
+@media (max-width: 1024px) {
+    .contain {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: -300px;
+    }
+
+    figure.card {
+        width: 100%;
+    }
+
+    figure.card:hover figcaption {
+        transform: translateY(0px);
+    }
+
+    figure.card--4:hover {
+        background-position: 100% 50%;
+    }
+
+    figure.card--4 figcaption {
+        right: 0;
+        transform: translateX(1000px);
+    }
+
+    figure.card--4 figcaption {
+        flex-direction: column;
+        width: 180px;
+        height: 100%;
+        padding: 20px 15px;
+    }
+
+    figure.card figcaption {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        position: absolute;
+        width: 880px;
+        background-image: var(--image-src);
+        transition: transform 400ms ease;
+        cursor: pointer;
+    }
+
+    #headingkerala {
+        color: black;
+        font-family: "Poppins";
+        margin-left: 100px;
+    }
+
+    figure.card figcaption .info h3 {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+
+    figure.card figcaption .info span {
+        color: black;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        margin-left: 100px;
+    }
+    #customButton {
+        margin-top: -10px;
+        margin-left: 100px;
+        border-radius: 10px;
+        outline: 0;
+        cursor: pointer;
+        text-align: center;
+        color: #ffffff;
+        background: #2f575d;
+        box-shadow: rgba(192, 234, 240, 0.116) 0px 1px 0px 0px,
+            rgba(2, 80, 94, 0.356) 0px -1px 0px 0px inset;
+    }
+
+    #customButton:hover {
+        background: #1a3336;
+        box-shadow: rgba(192, 234, 240, 0.116) 0px 1px 0px 0px,
+            rgba(2, 80, 94, 0.356) 0px -1px 0px 0px inset;
+        transition: 0.5s;
+        color: #fff;
+    }
+
+    .buttonpara {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        letter-spacing: 1px;
+    }
+                                .figuretransit {
+                                    width: 500%;
+                                    display: flex;
+                                    animation: slide 5s infinite;
+                                }
+                
+                                @keyframes slide {
+                
+                                    0%,
+                                    100% {
+                                        transform: translateX(-100%);
+                                    }
+                
+                                    25%,
+                                    50% {
+                                        transform: translateX(10%);
+                                    }
+                
+                                    50%,
+                                    50% {
+                                        transform: translateX(1%);
+                                    }
+                
+                                    51%,
+                                    51% {
+                                        transform: translateX(1%);
+                                    }
+                
+                                }
+                
+                                }
