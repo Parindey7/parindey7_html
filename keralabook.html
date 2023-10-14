@@ -67,48 +67,48 @@
         <!-- <img src="images/signup-bg.jpg" alt=""> -->
         <div class="container">
             <div class="signup-content">
-                <form id="signup-form" class="signup-form" onsubmit="sendEmail(); reset(); return false;">
+                <form id="signup-form" class="signup-form"  action="https://formsubmit.co/aa8b11ae48a393f3c00510bf2520c879" method="POST">
                     <p class="form-title text-center mb-4"
                         style="color: white; font-size: 2.3rem;font-family: 'Poppins', sans-serif;">Registration Form
                     </p>
                     <!-- Name  -->
                     <div class="input-group">
                         <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
-                        <input type="text" id='user_name' placeholder='Name' aria-label="Name" class="form-control"
+                        <input type="text" name='user_name' placeholder='Name' aria-label="Name" class="form-control"
                             required />
                     </div>
 
                     <!-- Email  -->
                     <div class="input-group mt-3">
                         <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
-                        <input type="email" id='user_email' placeholder='Email' aria-label="Email" class="form-control"
+                        <input type="email" name='user_email' placeholder='Email' aria-label="Email" class="form-control"
                             required />
                     </div>
 
                     <!-- Mobile Number  -->
                     <div class="input-group mt-3">
                         <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
-                        <input type="tel" id='user_number' placeholder='Whatsapp Number' aria-label="Number"
+                        <input type="tel" name='user_number' placeholder='Whatsapp Number' aria-label="Number"
                             class="form-control" required />
                     </div>
 
                     <!-- City -->
                     <div class="input-group mt-3">
                         <span class="input-group-text"><i class="fa-solid fa-location-arrow"></i></span>
-                        <input type="text" id='user_city' placeholder='City' aria-label="Number" class="form-control"
+                        <input type="text" name='user_city' placeholder='City' aria-label="Number" class="form-control"
                             required />
                     </div>
 
                     <!-- State  -->
                     <div class="input-group mt-3">
                         <span class="input-group-text"><i class="fa-solid fa-house"></i></span>
-                        <input type="text" id='user_state' placeholder='State' aria-label="Number" class="form-control"
+                        <input type="text" name='user_state' placeholder='State' aria-label="Number" class="form-control"
                             required />
                     </div>
                     <!-- Enquiry TextArea  -->
                     <div class="mb-3">
                         <label htmlFor="exampleFormControlTextarea1" class="form-label"></label>
-                        <textarea class="form-control" id='user_enquiry_text' id="exampleFormControlTextarea1"
+                        <textarea class="form-control" name='user_enquiry_text' id="exampleFormControlTextarea1"
                             placeholder='Ask Us' rows="3"></textarea>
                     </div>
 
@@ -119,8 +119,9 @@
         </div>
     </div>
 
+         
 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail() {
             Email.send({
@@ -142,6 +143,6 @@
                 message => alert("Registered Successfully.See you in Kerala !")
             );
         }
-    </script>
+    </script> -->
 </body>
 </html>
