@@ -140,13 +140,13 @@
         .even {
             flex-direction: column-reverse;
         }
-.timeline-item:nth-child(even) .timeline-label{
-    left: 10%;
-    transform: translateY(-2000%);
-    margin-right: -100px;
-}
+    .timeline-item:nth-child(even) .timeline-label{
+        left: 10%;
+        transform: translateY(-2000%);
+        margin-right: -100px;
+    }
 
- .timeline-item.even {
+    .timeline-item.even {
         flex-direction: column-reverse;
     }
 
