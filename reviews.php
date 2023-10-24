@@ -61,7 +61,7 @@ $userFeedback = $_POST['feedback'];
 $userRating = $_POST['rating'];
 
 // SQL query to insert data into the database
-$sql = "INSERT INTO Client (name,review,rating)
+$sql = "INSERT INTO Reviews (name,review,rating)
         VALUES ('$userName', '$userFeedback', '$userRating')";
 
 // Execute SQL query
