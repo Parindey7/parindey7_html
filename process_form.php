@@ -69,7 +69,7 @@ $sql = "INSERT INTO Client (name, email, number, city, state, enquiry)
 
 // Execute SQL query
 if ($conn->query($sql) === TRUE) {
-    echo "Done";
+    echo "";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
