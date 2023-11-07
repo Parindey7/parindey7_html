@@ -120,27 +120,27 @@
                   <div class="row g-3">
                     <div class="col-md-6">
                       <label for="fullName" class="form-label">Full Name</label>
-                      <input type="text" class="form-control" id="fullName" required>
+                      <input type="text" class="form-control" name="fullName" required>
                     </div>
                     <div class="col-md-6">
                       <label for="phoneNumber" class="form-label">Phone Number</label>
-                      <input type="tel" class="form-control" id="phoneNumber" required>
+                      <input type="tel" class="form-control" name="phoneNumber" required>
                     </div>
                     <div class="col-md-6">
                       <label for="destination" class="form-label">Destination</label>
-                      <input type="text" class="form-control" id="destination" placeholder="eg. Srinagar">
+                      <input type="text" class="form-control" name="destination" placeholder="eg. Srinagar">
                     </div>
                     <div class="col-md-6">
                       <label for="tripDuration" class="form-label">Duration of Trip</label>
-                      <input type="text" class="form-control" id="tripDuration" placeholder="eg. 3N/4D">
+                      <input type="text" class="form-control" name="tripDuration" placeholder="eg. 3N/4D">
                     </div>
                     <div class="col-md-6">
                       <label for="travelDates" class="form-label">Preferred Travel Dates</label>
-                      <input type="date" class="form-control" id="travelDates" required>
+                      <input type="date" class="form-control" name="travelDates" required>
                     </div>
                     <div class="col-md-6">
                       <label for="hotelCategory" class="form-label">Hotel Category</label>
-                      <select class="form-select" id="hotelCategory" required>
+                      <select class="form-select" name="hotelCategory" required>
                         <option value="budget">Budget</option>
                         <option value="midRange">Mid-Range</option>
                         <option value="luxury">Luxury</option>
@@ -148,19 +148,19 @@
                     </div>
                     <div class="col-12">
                       <label for="hotelRequests" class="form-label">Specific Hotel Requests</label>
-                      <textarea class="form-control" id="hotelRequests" rows="3"></textarea>
+                      <textarea class="form-control" name="hotelRequests" rows="3"></textarea>
                     </div>
                     <div class="col-md-6">
                       <label for="adults" class="form-label">Number of Adults</label>
-                      <input type="number" class="form-control" id="adults" required>
+                      <input type="number" class="form-control" name="adults" required>
                     </div>
                     <div class="col-md-6">
                       <label for="children" class="form-label">Number of Children</label>
-                      <input type="number" class="form-control" id="children">
+                      <input type="number" class="form-control" name="children">
                     </div>
                     <div class="col-md-6">
                       <label for="transportation" class="form-label">Transportation Preferences</label>
-                      <select class="form-select" id="transportation" required>
+                      <select class="form-select" name="transportation" required>
                         <option value="privateCar">Private Car</option>
                         <option value="publicTransport">Public Transport</option>
                         <option value="guidedTours">Guided Tours</option>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="airportTransfers">
+                        <input type="checkbox" class="form-check-input" name="airportTransfers">
                         <label class="form-check-label" for="airportTransfers">Airport Transfers </label>
                       </div>
                     </div>
