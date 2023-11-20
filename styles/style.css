@@ -45,32 +45,31 @@ code {
 .bg-image {
   width: 100%;
   height: 100vh;
-  background: url(../images/bg_image.jpg) top center;
+  background: url('../images/bg_image.jpg') top center;
   background-size: cover;
   position: absolute;
-  top: 0%;
 }
 
 #child_div {
   color: white;
-  height: 80vh;
+  height:80vh;
   width: 100vw;
   position: relative;
-  top: 20%;
+  top: 25%;
 }
 
 #heading {
   position: relative;
   font-family:'Kaushan Script', cursive;;
-  font-size: 80px;
-  bottom: 0.5rem;
+  font-size: 90px;
+  bottom: 9%;
 }
 
-#heading:hover {
+#heading:hover{
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 #tagline {
-  padding-top: 22%;
+  padding-top: 20%;
   padding-bottom: 2%;
 }
 
@@ -78,13 +77,13 @@ code {
   padding-bottom: 4.5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
   #heading {
-    font-size: 45px;
+    font-size: 55px;
     padding-top: 2%;
   }
   #tagline {
-    padding-top: 36%;
+    padding-top: 62%;
   }
   #description {
     padding-top: 8%;
@@ -118,7 +117,7 @@ code {
 
 /* Explore Page  */
 #explore_div {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 #itinerary_heading {
