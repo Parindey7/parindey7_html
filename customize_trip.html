@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="./images/logo.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+          name="description"
+          content="Parindey7 is a travel website powered by a community of budget travellers. We offer Inexpensive itineraries, Aesthetic accommodation, Offbeat spots and High vibes."
+        />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+         <!-- Font Awesome CDN -->
+         <script src="https://kit.fontawesome.com/ae529c4f4a.js" crossorigin="anonymous"></script>
+
+        <title>Parindey7 - Discover the world like never before</title>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles/style.css">
+      
+       
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+    </style>
+     <style>
+        body {
+          background-color: #ffffff;
+        }
+    
+        .form-container {
+          background-color: #fcfcfc;
+          border-radius: 10px;
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+          padding: 30px;
+          margin-top: 50px;
+        }
+    
+        .form-container h2 {
+          text-align: center;
+          margin-bottom: 30px;
+        }
+    
+        .form-control {
+          margin-bottom: 20px;
+        }
+    
+        .btn-dark {
+          background-color: #005568;
+          border: none;
+          transition: all 0.3s ease;
+        }
+    
+        .btn-dark:hover {
+          background-color: #000000;
+        }
+
+        .card-img-top{
+            box-shadow: none;
+            border-radius: 3%;
+        }
+        .card{
+            background-color: transparent;
+            border: 0px;
+        }
+
+        body{
+          background-color: #FFFFFF;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%232FB199'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+          background-attachment: fixed;
+          background-size: cover;
+        }
+
+      </style>
+</head>
+<body>
+    <div id="navbar_container">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" >
+            <a href='/'><img src="./images/logo.png" height="25" alt="parindey_logo"/></a>
+            <a href='/'><img class="navbar-brand" src="./images/name.png" height="40" alt="parindey_name"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav m-auto">
+                <li class="nav-item active mx-1">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" aria-current="page" href="/explore.html">Explore</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" aria-current="page" href="/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" aria-current="page" href="/aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" aria-current="page" href="/contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link active" aria-current="page" href="/customize_trip.html">Customize trip</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+        <section class="mb-3" style="margin-top: 5rem;">
+            <hr>
+            <h3 class="text-center mt-5 mb-3"><b>Your Ultimate Customized Travel Experience Awaits!</b></h3>
+            <div class="container mt-5" style="width: 80%;">
+                <!-- <h4 class="mb-4">We will make tour dream trip successful</h4> -->
+                <form method="post" action="customize_form.php">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="fullName" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" name="fullName" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="phoneNumber" class="form-label">Phone Number</label>
+                      <input type="tel" class="form-control" name="phoneNumber" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="destination" class="form-label">Destination</label>
+                      <input type="text" class="form-control" name="destination" placeholder="eg. Srinagar">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="tripDuration" class="form-label">Duration of Trip</label>
+                      <input type="text" class="form-control" name="tripDuration" placeholder="eg. 3N/4D">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="travelDates" class="form-label">Preferred Travel Dates</label>
+                      <input type="date" class="form-control" name="travelDates" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="hotelCategory" class="form-label">Hotel Category</label>
+                      <select class="form-select" name="hotelCategory" required>
+                        <option value="budget">Budget</option>
+                        <option value="midRange">Mid-Range</option>
+                        <option value="luxury">Luxury</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="hotelRequests" class="form-label">Specific Hotel Requests</label>
+                      <textarea class="form-control" name="hotelRequests" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="adults" class="form-label">Number of Adults</label>
+                      <input type="number" class="form-control" name="adults" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="children" class="form-label">Number of Children</label>
+                      <input type="number" class="form-control" name="children">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="transportation" class="form-label">Transportation Preferences</label>
+                      <select class="form-select" name="transportation" required>
+                        <option value="privateCar">Private Car</option>
+                        <option value="publicTransport">Public Transport</option>
+                        <option value="guidedTours">Guided Tours</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="airportTransfers">
+                        <label class="form-check-label" for="airportTransfers">Airport Transfers </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-dark btn-lg text-center">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+        </section>
+        <section id="available itineraries">
+            <h3 class="text-center mt-5 mb-5"><b>Discover Our Handcrafted Journeys</b></h3>
+
+            <div class="container mt-5" style="width: 80%;">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
+                    <div class="col mb-5 p-3">
+                        <div class="card align-items-center">
+                            <img src="./images/keralawebitinerary.webp" class="card-img-top" alt="Image 2" style="width: 80%; height: 100%;">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title">Image 2</h5> -->
+                                <a href="./pdfs/test_filehandling.pdf" class="btn btn-dark">Get itinerary</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 p-3">
+                        <div class="card align-items-center">
+                            <img src="./images/varanasiwebitinerary.webp" class="card-img-top" alt="Image 2" style="width: 80%; height: 100%;">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title">Image 2</h5> -->
+                                <a href="./pdfs/Varanasi.pdf" class="btn btn-dark">Get itinerary</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 p-3">
+                        <div class="card align-items-center">
+                            <img src="./images/manaliwebitinerary.webp" class="card-img-top" alt="Image 2" style="width: 80%; height: 100%;">
+                            <div class="card-body text-center">
+                                <!-- <h5 class="card-title">Image 2</h5> -->
+                                <a href="./pdfs/Manali.pdf" class="btn btn-dark">Get itinerary</a>
+                            </div>
+                        </div>
+                    <!-- Add more columns as needed -->
+                </div>
+
+                <div class="col mb-5 p-3">
+                  <div class="card align-items-center">
+                      <img src="./images/kashmirwebitinerary.webp" class="card-img-top" alt="Image 2" style="width: 80%; height: 100%;">
+                      <div class="card-body text-center">
+                          <!-- <h5 class="card-title">Image 2</h5> -->
+                          <a href="./pdfs/Kashmir.pdf" class="btn btn-dark">Get itinerary</a>
+                      </div>
+                  </div>
+              </div>
+
+
+              <div class="col mb-5 p-3">
+                <div class="card align-items-center">
+                    <img src="./images/spitiwebitinerary.webp" class="card-img-top" alt="Image 2" style="width: 80%; height: 100%;">
+                    <div class="card-body text-center">
+                        <!-- <h5 class="card-title">Image 2</h5> -->
+                        <a href="./pdfs/Spiti.pdf" class="btn btn-dark">Get itinerary</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-5 p-3">
+              <div class="card align-items-center">
+                  <img src="./images/kasolwebitinerary.webp" class="card-img-top" alt="Image 2" style="width: 80%; height: 100%;">
+                  <div class="card-body text-center">
+                      <!-- <h5 class="card-title">Image 2</h5> -->
+                      <a href="#" class="btn btn-dark">Get itinerary</a>
+                  </div>
+              </div>
+          </div>
+                
+            </div>
+
+        </section>
+    
+    
+
+
+
+
+</body>
+</html>
